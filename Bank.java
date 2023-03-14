@@ -42,7 +42,7 @@ public class RhymeBank {
 				System.out.println("Please Enter a customer ID to check their balence");
 				int index = input.nextInt();
 				double balence = accountBalences[index];
-				System.out.println("This customer has $" + balence + " in their account");
+				System.out.println("This customer has Rs" + balence + " in their account");
 			}
 			else if(userInput == 4){
 				System.out.println("Bank Modify Balence Menu");
@@ -56,9 +56,9 @@ public class RhymeBank {
 				double total = 0;
 				for(int i = 0; i < size; i++){
 					total = total + accountBalences[i];
-					System.out.println(accountNames[i] + " has $" + accountBalences[i] + " in their account");
+					System.out.println(accountNames[i] + " has Rs" + accountBalences[i] + " in their account");
 				}
-				System.out.println("In total, there is $" + total + " in the bank");
+				System.out.println("In total, there is Rs" + total + " in the bank");
 			}
 			else if(userInput == -1){
 				System.exit(-1);
